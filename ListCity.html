@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> City</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jsListCity.js"></script>
+</head>
+<body>
+<form id="add-city" style="display: block">
+    <h2>Create City</h2>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" placeholder="name"></td>
+        </tr>
+        <tr>
+            <td>Population:</td>
+            <td><input type="text" id="population" placeholder="population"></td>
+        </tr><tr>
+        <td>Area:</td>
+        <td><input type="text" id="area" placeholder="area"></td>
+    </tr><tr>
+        <td>Gdp:</td>
+        <td><input type="text" id="gdp" placeholder="gdp"></td>
+    </tr><tr>
+        <td>Description:</td>
+        <td><input type="text" id="description" placeholder="description"></td>
+    </tr></tr>
+        <tr>
+            <td>Country:</td>
+            <td>
+                <select id="country">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Create new" onclick="addNewCity()"></td>
+        </tr>
+    </table>
+</form>
+
+<h2>Edit City</h2>
+<form id="editForm">
+    <table>
+        <input type="text" id="idEdit" hidden/>
+        <tr>
+            <td> Name :</td>
+            <td><input type="text" id="nameEdit" placeholder="  name "></td>
+        </tr>
+        <tr>
+            <td> Area :</td>
+            <td><input type="text" id="areaEdit" placeholder=" area"></td>
+        </tr>
+        <tr>
+            <td>country : </td>
+            <td>
+                <select id="countryEdit">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Population : </td>
+            <td><input type="text" id="populationEdit" placeholder="population"></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><input type="text" id="descriptionEdit" placeholder="description"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Update" onclick="updateListCity()"></td>
+        </tr>
+    </table>
+</form>
+
+<h1> LIST CITY HUNTER</h1>
+<table id="cityList" border="3px"></table>
+
+</body>
+</html>
